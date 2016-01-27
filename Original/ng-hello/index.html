@@ -1,0 +1,16 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+  </head>
+  <body ng-controller="HelloWorldCtrl">
+    <h1>{{helloWorldMsg}}</h1>
+    <script>
+      var app = angular.module('app',[]);
+      app.controller('HelloWorldCtrl',
+              function($scope){
+                $scope.helloWorldMsg = "Hello World";
+              });
+    </script>
+  </body>
+</html>
